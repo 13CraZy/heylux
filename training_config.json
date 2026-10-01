@@ -1,0 +1,23 @@
+{
+  "model_name": "hey_lux",
+  "target_phrase": [
+    "hey lux",
+    "oye lux",
+    "lux"
+  ],
+  "framework": "openwakeword",
+  "format": "onnx",
+  "audio": {
+    "sample_rate": 16000,
+    "channels": 1,
+    "chunk_size": 1280
+  },
+  "architecture": {
+    "input_name": "onnx::Flatten_0",
+    "input_shape": [1, 16, 96],
+    "output_name": "output",
+    "output_shape": [1, 1]
+  },
+  "recommended_threshold": 0.35,
+  "description": "Modelo acustico de deteccion de palabra de activacion (Wake Word) entrenado en Google Colab con openWakeWord para el ecosistema Luxnode."
+}
